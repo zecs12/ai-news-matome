@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>テストAtom</title>
+  <link rel="alternate" type="text/html" href="https://example.org/" />
+  <entry>
+    <title>AIエージェントの安全な実行</title>
+    <link rel="alternate" type="text/html" href="https://example.org/e1" />
+    <published>2026-10-17T15:27:18Z</published>
+    <summary>AIエージェントを安全に動かすための仕組みです。</summary>
+  </entry>
+  <entry>
+    <title>サーバーの話</title>
+    <link rel="alternate" type="text/html" href="https://example.org/e2" />
+    <updated>2026-10-15T15:21:12Z</updated>
+    <summary>サーバーの設定についての話です。</summary>
+  </entry>
+</feed>

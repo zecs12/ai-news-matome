@@ -1,0 +1,14 @@
+[
+  {"name": "ChatGPT", "category": "chat", "price": "mid", "icon": "💬", "desc": "質問すると、人と話すように答えてくれます。文章の下書きも得意です。"},
+  {"name": "Claude", "category": "chat", "price": "mid", "icon": "🧡", "desc": "長い文章を読んだり、プログラムを書いたりするのが得意なAIです。"},
+  {"name": "Gemini", "category": "chat", "price": "mid", "icon": "✨", "desc": "Googleのサービスと一緒に使いやすいAIです。"},
+  {"name": "Microsoft Copilot", "aliases": ["Copilot"], "category": "chat", "price": "free", "icon": "🪁", "desc": "WindowsやEdgeから、すぐ質問できるAIです。"},
+  {"name": "Midjourney", "category": "image", "price": "paid", "icon": "🖼️", "desc": "作品のようにきれいな画像が作れると評判のAIです。"},
+  {"name": "Adobe Firefly", "category": "image", "price": "mid", "icon": "🔥", "desc": "画像づくりの定番ソフトの会社が作るAIです。"},
+  {"name": "Canva のAI機能", "aliases": ["Canva"], "category": "image", "price": "mid", "icon": "🧩", "desc": "チラシやSNS画像づくりの中で、画像も作れます。"},
+  {"name": "Bing Image Creator", "aliases": ["Image Creator"], "category": "image", "price": "free", "icon": "🔍", "desc": "言葉を入れるだけで、無料で画像が作れます。"},
+  {"name": "Sora", "category": "video", "price": "paid", "icon": "🌊", "desc": "言葉から、なめらかな動画を作るAIです。"},
+  {"name": "Runway", "category": "video", "price": "mid", "icon": "🛫", "desc": "動画づくりと編集がひとつにまとまったAIです。"},
+  {"name": "Kling", "category": "video", "price": "mid", "icon": "🎞️", "desc": "人や動物の動きが自然な動画を作れます。"},
+  {"name": "Vrew", "category": "video", "price": "mid", "icon": "✂️", "desc": "しゃべった内容から字幕つき動画を作る、日本語向けの道具です。"}
+]

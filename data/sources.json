@@ -1,0 +1,6 @@
+[
+  {"name": "ITmedia AI＋", "url": "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml", "ai_only": true},
+  {"name": "GIGAZINE", "url": "https://gigazine.net/news/rss_2.0/", "ai_only": false},
+  {"name": "ASCII.jp", "url": "https://ascii.jp/rss.xml", "ai_only": false},
+  {"name": "Publickey", "url": "https://www.publickey1.jp/atom.xml", "ai_only": false}
+]

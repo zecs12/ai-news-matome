@@ -1,0 +1,191 @@
+[
+ {
+  "title": "Claudeで長い資料を読ませる方法",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/c1",
+  "category": "chat",
+  "service": "Claude",
+  "hours_ago": 3,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "ChatGPTに新機能が追加",
+  "site": "GIGAZINE",
+  "url": "https://example.com/c2",
+  "category": "chat",
+  "service": "ChatGPT",
+  "hours_ago": 20,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "Copilotがさらに便利に",
+  "site": "ASCII.jp",
+  "url": "https://example.com/c3",
+  "category": "chat",
+  "service": "Microsoft Copilot",
+  "hours_ago": 50,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "色なしの記事（サービス名なし）",
+  "site": "Publickey",
+  "url": "https://example.com/c4",
+  "category": "chat",
+  "service": "",
+  "hours_ago": 100,
+  "summary": ""
+ },
+ {
+  "title": "14日ぎりぎりの記事",
+  "site": "GIGAZINE",
+  "url": "https://example.com/c5",
+  "category": "chat",
+  "service": "Gemini",
+  "hours_ago": 335,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "14日を過ぎた記事（表示されない）",
+  "site": "GIGAZINE",
+  "url": "https://example.com/c6",
+  "category": "chat",
+  "service": "Gemini",
+  "hours_ago": 340,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "</script><b>危ないタイトル</b> & <i>テスト",
+  "site": "GIGAZINE",
+  "url": "https://example.com/c7",
+  "category": "chat",
+  "service": "",
+  "hours_ago": 30,
+  "summary": "<img src=x onerror=alert(1)>説明"
+ },
+ {
+  "title": "javascript:のリンクの記事",
+  "site": "GIGAZINE",
+  "url": "javascript:alert(1)",
+  "category": "chat",
+  "service": "",
+  "hours_ago": 40,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事1",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i0",
+  "category": "image",
+  "service": "Midjourney",
+  "hours_ago": 1,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事2",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i1",
+  "category": "image",
+  "service": "Adobe Firefly",
+  "hours_ago": 6,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事3",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i2",
+  "category": "image",
+  "service": "Bing Image Creator",
+  "hours_ago": 11,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事4",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i3",
+  "category": "image",
+  "service": "Midjourney",
+  "hours_ago": 16,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事5",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i4",
+  "category": "image",
+  "service": "Adobe Firefly",
+  "hours_ago": 21,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事6",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i5",
+  "category": "image",
+  "service": "Bing Image Creator",
+  "hours_ago": 26,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事7",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i6",
+  "category": "image",
+  "service": "Midjourney",
+  "hours_ago": 31,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事8",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i7",
+  "category": "image",
+  "service": "Adobe Firefly",
+  "hours_ago": 36,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "画像づくりの記事9",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/i8",
+  "category": "image",
+  "service": "Bing Image Creator",
+  "hours_ago": 41,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "Soraで動画を作る",
+  "site": "ASCII.jp",
+  "url": "https://example.com/v1",
+  "category": "video",
+  "service": "Sora",
+  "hours_ago": 8,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "Runwayで編集",
+  "site": "GIGAZINE",
+  "url": "https://example.com/v2",
+  "category": "video",
+  "service": "Runway",
+  "hours_ago": 60,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "AIの利用実態調査",
+  "site": "ITmedia AI＋",
+  "url": "https://example.com/u1",
+  "category": "uncategorized",
+  "service": "",
+  "hours_ago": 5,
+  "summary": "テスト用の短い説明です。"
+ },
+ {
+  "title": "AI規制の動き",
+  "site": "Publickey",
+  "url": "https://example.com/u2",
+  "category": "uncategorized",
+  "service": "",
+  "hours_ago": 90,
+  "summary": "テスト用の短い説明です。"
+ }
+]

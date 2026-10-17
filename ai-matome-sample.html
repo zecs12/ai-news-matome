@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AIニュースまとめ（試作）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F3F6FB; --surface:#FFFFFF; --ink:#1B2440; --sub:#5B6580; --line:#DDE3EF;
+  --free:#1F9D63; --free-bg:#E3F5EC;
+  --mid:#C98A00; --mid-bg:#FFF3D1;
+  --paid:#D93F46; --paid-bg:#FDE6E7;
+  --accent:#2F4BFF;
+  --shadow:0 1px 2px rgba(27,36,64,.06),0 6px 18px rgba(27,36,64,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121726; --surface:#1B2236; --ink:#EEF1FA; --sub:#A3ADC8; --line:#2C3552;
+    --free:#4CD08C; --free-bg:#143527;
+    --mid:#F2BC3A; --mid-bg:#3A2F10;
+    --paid:#FF7A80; --paid-bg:#3E1A1D;
+    --accent:#8EA0FF;
+    --shadow:0 1px 2px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121726; --surface:#1B2236; --ink:#EEF1FA; --sub:#A3ADC8; --line:#2C3552;
+  --free:#4CD08C; --free-bg:#143527;
+  --mid:#F2BC3A; --mid-bg:#3A2F10;
+  --paid:#FF7A80; --paid-bg:#3E1A1D;
+  --accent:#8EA0FF;
+  --shadow:0 1px 2px rgba(0,0,0,.3);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+  font-size:17px;line-height:1.75;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 80px}
+
+/* ヘッダー */
+header{padding:28px 0 8px}
+header h1{margin:0;font-size:30px;line-height:1.35;font-weight:900;letter-spacing:.02em}
+header p{margin:8px 0 0;color:var(--sub);font-size:15px}
+.sample-note{margin:14px 0 0;padding:10px 14px;border-radius:12px;background:var(--mid-bg);
+  color:var(--ink);font-size:14px;line-height:1.6;border:1px dashed var(--mid)}
+
+/* 料金ボタン（凡例＋絞り込み） */
+.legend{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:18px 0 6px}
+.chip{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:14px;
+  background:var(--surface);border:2px solid var(--line);text-align:left;min-height:48px;font-weight:700;font-size:15px}
+.chip i{width:14px;height:14px;border-radius:50%;flex:none;background:var(--sub)}
+.chip small{display:block;font-weight:400;color:var(--sub);font-size:12px;line-height:1.3}
+.chip[data-f="free"] i{background:var(--free)}
+.chip[data-f="mid"] i{background:var(--mid)}
+.chip[data-f="paid"] i{background:var(--paid)}
+.chip[aria-pressed="true"]{border-color:var(--ink);box-shadow:var(--shadow)}
+.chip[data-f="free"][aria-pressed="true"]{border-color:var(--free);background:var(--free-bg)}
+.chip[data-f="mid"][aria-pressed="true"]{border-color:var(--mid);background:var(--mid-bg)}
+.chip[data-f="paid"][aria-pressed="true"]{border-color:var(--paid);background:var(--paid-bg)}
+
+/* タブ */
+.tabs-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0 8px}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--line);padding:5px;border-radius:18px}
+.tab{border:0;background:transparent;border-radius:14px;padding:10px 4px;font-weight:700;font-size:14px;line-height:1.35;min-height:56px}
+.tab span{display:block;font-size:22px;line-height:1.2}
+.tab[aria-selected="true"]{background:var(--surface);box-shadow:var(--shadow)}
+
+h2{font-size:21px;margin:26px 0 4px;font-weight:900}
+.h-sub{margin:0 0 12px;color:var(--sub);font-size:14px}
+
+/* サービスカード */
+.services{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:560px){.services{grid-template-columns:1fr 1fr}}
+.svc{background:var(--surface);border-radius:18px;padding:16px;box-shadow:var(--shadow);border:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.svc-top{display:flex;align-items:center;gap:12px}
+.ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:26px;flex:none;background:var(--bg)}
+.svc h3{margin:0;font-size:18px;line-height:1.3}
+.svc p{margin:0;font-size:15px;color:var(--sub);line-height:1.6}
+.badge{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:700;margin-top:2px}
+.badge.free{background:var(--free-bg);color:var(--free)}
+.badge.mid{background:var(--mid-bg);color:var(--mid)}
+.badge.paid{background:var(--paid-bg);color:var(--paid)}
+.svc-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:13px;color:var(--sub)}
+.count{font-weight:700;color:var(--ink);background:var(--bg);padding:2px 10px;border-radius:99px}
+
+/* 記事カード */
+.news{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden;position:relative}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:9px;background:var(--sub)}
+.card[data-price="free"]::before{background:var(--free)}
+.card[data-price="mid"]::before{background:var(--mid)}
+.card[data-price="paid"]::before{background:var(--paid)}
+.card > button{display:block;width:100%;text-align:left;background:none;border:0;padding:14px 16px 14px 26px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;color:var(--sub);margin-bottom:4px}
+.new{background:var(--accent);color:#fff;font-weight:900;font-size:12px;padding:1px 9px;border-radius:99px}
+.card h3{margin:0;font-size:17px;line-height:1.5}
+.card .one{margin:4px 0 0;font-size:15px;color:var(--sub);line-height:1.6}
+.more{margin-top:8px;font-size:13px;font-weight:700;color:var(--accent)}
+.detail{display:none;padding:0 16px 16px 26px;font-size:15px;line-height:1.8;border-top:1px dashed var(--line)}
+.card.open .detail{display:block;padding-top:12px}
+.card.open .more{display:none}
+.detail h4{margin:10px 0 2px;font-size:14px;color:var(--sub)}
+.detail p{margin:0}
+.src{display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:10px 16px;border-radius:12px;background:var(--ink);color:var(--bg);font-weight:700;text-decoration:none;font-size:15px;min-height:44px}
+.src-note{display:block;margin-top:4px;font-size:12px;color:var(--sub)}
+
+/* 用語 */
+.term{background:none;border:0;padding:0;font:inherit;color:inherit;border-bottom:2px dotted var(--accent);cursor:help}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);
+  box-shadow:0 -10px 30px rgba(0,0,0,.18);border-radius:20px 20px 0 0;padding:18px 20px calc(18px + env(safe-area-inset-bottom,0px));
+  transform:translateY(105%);transition:transform .25s ease;max-width:760px;margin:0 auto}
+.sheet.show{transform:none}
+.sheet b{font-size:18px}
+.sheet p{margin:6px 0 12px;font-size:16px}
+.sheet button{padding:10px 20px;border-radius:12px;border:2px solid var(--line);background:var(--bg);font-weight:700;min-height:44px}
+.empty{padding:28px;text-align:center;color:var(--sub);background:var(--surface);border-radius:16px;border:1px dashed var(--line)}
+footer{margin-top:36px;font-size:13px;color:var(--sub);line-height:1.7}
+@media(prefers-reduced-motion:reduce){.sheet{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AIニュースまとめ</h1>
+    <p>いま話題のAIを、やさしく・色つきで。</p>
+    <div class="sample-note">これは<b>見た目の試作</b>です。サービス名・料金の色・記事は<b>サンプル</b>で、実際の情報とは限りません。「元記事を開く」も、まだ本物のリンクではありません。</div>
+  </header>
+
+  <div class="legend" role="group" aria-label="料金で絞り込む" id="legend">
+    <button class="chip" data-f="all" aria-pressed="true"><i></i><span>ぜんぶ<small>すべて表示</small></span></button>
+    <button class="chip" data-f="free" aria-pressed="false"><i></i><span>無料<small>お金がかからない</small></span></button>
+    <button class="chip" data-f="mid" aria-pressed="false"><i></i><span>無料プランあり<small>無料でも使える／有料は上位版</small></span></button>
+    <button class="chip" data-f="paid" aria-pressed="false"><i></i><span>有料のみ<small>使うにはお金がかかる</small></span></button>
+  </div>
+
+  <div class="tabs-bar">
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" data-c="chat" aria-selected="true"><span>💬</span>チャット・コード</button>
+      <button class="tab" role="tab" data-c="image" aria-selected="false"><span>🎨</span>画像づくり</button>
+      <button class="tab" role="tab" data-c="video" aria-selected="false"><span>🎬</span>動画づくり</button>
+    </div>
+  </div>
+
+  <main id="main"></main>
+
+  <footer>
+    色のきまりは、あらかじめ決めたサービス一覧にもとづきます。料金は変わることがあるので、使う前に公式サイトで確認してください。<br>
+    <button class="term" id="themeBtn" style="margin-top:8px">画面の明るさを切り替える</button>
+  </footer>
+</div>
+
+<div class="sheet" id="sheet" role="dialog" aria-live="polite">
+  <b id="sheetT"></b>
+  <p id="sheetD"></p>
+  <button id="sheetX">とじる</button>
+</div>
+
+<script>
+var DAY = 86400000;
+var CATS = {
+  chat:{title:"チャット・コード系",sub:"文章の相談やプログラム作りを手伝ってくれるAI"},
+  image:{title:"画像づくり系",sub:"言葉で伝えると、絵や写真風の画像を作ってくれるAI"},
+  video:{title:"動画づくり系",sub:"言葉や画像から、短い動画を作ってくれるAI"}
+};
+var PRICE = {free:"無料",mid:"無料プランあり",paid:"有料のみ"};
+
+/* サービス一覧（色はここで人が決める。サンプル） */
+var SERVICES = {
+  chat:[
+    {n:"ChatGPT",i:"💬",p:"mid",d:"質問すると、人と話すように答えてくれます。文章の下書きも得意です。"},
+    {n:"Claude",i:"🧡",p:"mid",d:"長い文章を読んだり、プログラムを書いたりするのが得意なAIです。"},
+    {n:"Gemini",i:"✨",p:"mid",d:"Googleのサービスと一緒に使いやすいAIです。"},
+    {n:"Microsoft Copilot",i:"🪁",p:"free",d:"WindowsやEdgeから、すぐ質問できるAIです。"}
+  ],
+  image:[
+    {n:"Midjourney",i:"🖼️",p:"paid",d:"作品のようにきれいな画像が作れると評判のAIです。"},
+    {n:"Adobe Firefly",i:"🔥",p:"mid",d:"画像づくりの定番ソフトの会社が作るAIです。"},
+    {n:"Canva のAI機能",i:"🧩",p:"mid",d:"チラシやSNS画像づくりの中で、画像も作れます。"},
+    {n:"Bing Image Creator",i:"🔍",p:"free",d:"言葉を入れるだけで、無料で画像が作れます。"}
+  ],
+  video:[
+    {n:"Sora",i:"🌊",p:"paid",d:"言葉から、なめらかな動画を作るAIです。"},
+    {n:"Runway",i:"🛫",p:"mid",d:"動画づくりと編集がひとつにまとまったAIです。"},
+    {n:"Kling",i:"🎞️",p:"mid",d:"人や動物の動きが自然な動画を作れます。"},
+    {n:"Vrew",i:"✂️",p:"mid",d:"しゃべった内容から字幕つき動画を作る、日本語向けの道具です。"}
+  ]
+};
+
+/* 記事（サンプル。本番では自動で集めた記事が入る） */
+var ARTICLES = {
+  chat:[
+    {t:"チャットAIに「長い資料」を読ませやすくなった",s:"Claude",p:"mid",h:3,site:"サンプルニュース",one:"大きな資料を、まとめて読ませやすくなったという話題です。",w:"たくさんのページがある資料も、一度に渡して質問できるようになってきた、という内容です。",how:"会議の資料やマニュアルを渡して「大事な点を3つ教えて」と頼む使い方ができます。"},
+    {t:"無料で使えるAIアシスタントに新機能",s:"Microsoft Copilot",p:"free",h:20,site:"サンプルITメディア",one:"無料のAIに、できることが増えたお知らせです。",w:"お金をかけなくても、文章づくりや調べ物の助けになる機能が増えた、という内容です。",how:"まずは無料のものから試したい人に向いています。"},
+    {t:"AIにプログラムを書かせる人が増えている",s:"ChatGPT",p:"mid",h:50,site:"サンプルテック",one:"プログラムを知らなくても、AIに頼んで作る人が増えています。",w:"「こんなことがしたい」と日本語で伝えると、AIがプログラムを書いてくれる使い方が広がっています。",how:"はじめは小さなお願い（表を整える、など）から試すと安心です。"},
+    {t:"Googleのサービスと組み合わせて使うAI",s:"Gemini",p:"mid",h:90,site:"サンプルニュース",one:"普段のGoogleのサービスとつなげて使う方法の紹介です。",w:"メールや予定表を見ながら、AIが手伝ってくれる使い方の解説です。",how:"仕事の予定づくりや返信の下書きに役立ちます。"}
+  ],
+  image:[
+    {t:"言葉だけで、チラシ用の画像が作れる",s:"Canva のAI機能",p:"mid",h:6,site:"サンプルデザイン",one:"チラシに使う画像を、言葉だけで作る方法の紹介です。",w:"作りたい絵を文章で書くと、AIが画像を出してくれます。そのままチラシに貼れます。",how:"「青い空と白い雲」のように短く伝えるのがコツです。"},
+    {t:"無料で試せる画像づくりAIのえらび方",s:"Bing Image Creator",p:"free",h:30,site:"サンプルITメディア",one:"お金をかけずに画像づくりを始める方法です。",w:"無料で使える画像AIの特徴と、はじめ方をまとめた記事です。",how:"まず無料で何枚か作って、好みに合うか確かめられます。"},
+    {t:"写真のような画像を作るコツ",s:"Midjourney",p:"paid",h:70,site:"サンプルデザイン",one:"リアルな画像を作るための「言葉の選び方」の紹介です。",w:"光の当たり方やカメラの種類を言葉に入れると、写真のような仕上がりに近づきます。",how:"お金はかかりますが、仕上がりのきれいさを重視する人向けです。"}
+  ],
+  video:[
+    {t:"文章を書くだけで、短い動画ができる",s:"Sora",p:"paid",h:10,site:"サンプルニュース",one:"文章から短い動画を作る仕組みの紹介です。",w:"「海辺を歩く犬」と書くと、そのような動画をAIが作ってくれます。",how:"お店の紹介動画の素材づくりなどに使われています。"},
+    {t:"動画の編集もAIにおまかせ",s:"Runway",p:"mid",h:40,site:"サンプルテック",one:"動画の背景を消すなどの作業を、AIが手伝ってくれます。",w:"むずかしい操作をしなくても、AIに頼むだけで動画を整えられる、という内容です。",how:"まずは無料枠で試して、足りなければ有料に進めます。"},
+    {t:"しゃべるだけで字幕つき動画",s:"Vrew",p:"mid",h:120,site:"サンプルITメディア",one:"話した内容が、自動で字幕になる道具の紹介です。",w:"録画した声を文字にして、字幕として動画に入れてくれます。",how:"説明動画やSNS用の動画づくりが楽になります。"}
+  ]
+};
+
+var GLOSSARY = {
+  "プロンプト":"AIに伝える「お願いの文章」のことです。",
+  "生成AI":"文章・画像・動画などを、新しく作り出してくれるAIのことです。",
+  "無料枠":"無料のまま使える範囲のことです。使いすぎると有料になるものもあります。"
+};
+/* 用語をタップできるようにする */
+function termify(text){
+  var out = text;
+  Object.keys(GLOSSARY).forEach(function(k){
+    out = out.split(k).join('<button class="term" data-term="'+k+'">'+k+'</button>');
+  });
+  return out;
+}
+
+var state = {cat:"chat", f:"all"};
+
+function ago(h){
+  if(h<24) return h+"時間前";
+  return Math.round(h/24)+"日前";
+}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+function render(){
+  var c = state.cat, f = state.f;
+  var svcs = SERVICES[c].filter(function(s){return f==="all"||s.p===f});
+  var arts = ARTICLES[c].filter(function(a){return f==="all"||a.p===f});
+  var html = '<h2>'+CATS[c].title+'</h2><p class="h-sub">'+CATS[c].sub+'</p>';
+
+  html += '<h2 style="font-size:17px;margin-top:18px">サービスのしょうかい</h2><div class="services">';
+  if(!svcs.length) html += '<div class="empty" style="grid-column:1/-1">この色のサービスは、いまありません。</div>';
+  svcs.forEach(function(s){
+    var cnt = ARTICLES[c].filter(function(a){return a.s===s.n}).length;
+    html += '<div class="svc"><div class="svc-top"><div class="ico" aria-hidden="true">'+s.i+'</div><div><h3>'+esc(s.n)+'</h3><span class="badge '+s.p+'">'+PRICE[s.p]+'</span></div></div>'
+      + '<p>'+termify(esc(s.d))+'</p><div class="svc-bottom"><span>新着記事</span><span class="count">'+cnt+'件</span></div></div>';
+  });
+  html += '</div>';
+
+  html += '<h2 style="font-size:17px;margin-top:28px">新着ニュース</h2><div class="news">';
+  if(!arts.length) html += '<div class="empty">この色の記事は、いまありません。</div>';
+  arts.forEach(function(a,i){
+    html += '<article class="card" data-price="'+a.p+'">'
+      + '<button aria-expanded="false" data-card="'+i+'"><div class="meta">'
+      + (a.h<24?'<span class="new">NEW</span>':'')
+      + '<span class="badge '+a.p+'" style="margin:0">'+PRICE[a.p]+'</span><span>'+esc(a.s)+'</span><span>'+ago(a.h)+'</span></div>'
+      + '<h3>'+esc(a.t)+'</h3><p class="one">'+termify(esc(a.one))+'</p><div class="more">くわしく見る ▼</div></button>'
+      + '<div class="detail"><h4>どんな話？</h4><p>'+termify(esc(a.w))+'</p><h4>どう役に立つ？</h4><p>'+termify(esc(a.how))+'</p>'
+      + '<a class="src" href="#" onclick="return false">元記事を開く（'+esc(a.site)+'）</a><span class="src-note">※試作のため、まだ本物のリンクではありません</span></div>'
+      + '</article>';
+  });
+  html += '</div>';
+  document.getElementById("main").innerHTML = html;
+}
+
+document.getElementById("tabs").addEventListener("click",function(e){
+  var b = e.target.closest(".tab"); if(!b) return;
+  state.cat = b.dataset.c;
+  document.querySelectorAll(".tab").forEach(function(t){t.setAttribute("aria-selected", t===b)});
+  render();
+});
+document.getElementById("legend").addEventListener("click",function(e){
+  var b = e.target.closest(".chip"); if(!b) return;
+  state.f = b.dataset.f;
+  document.querySelectorAll(".chip").forEach(function(t){t.setAttribute("aria-pressed", t===b)});
+  render();
+});
+document.getElementById("main").addEventListener("click",function(e){
+  var t = e.target.closest(".term");
+  if(t){ e.stopPropagation(); showTerm(t.dataset.term); return; }
+  var b = e.target.closest("button[data-card]");
+  if(b){
+    var card = b.parentElement;
+    card.classList.toggle("open");
+    b.setAttribute("aria-expanded", card.classList.contains("open"));
+  }
+});
+function showTerm(k){
+  document.getElementById("sheetT").textContent = k;
+  document.getElementById("sheetD").textContent = GLOSSARY[k];
+  document.getElementById("sheet").classList.add("show");
+}
+document.getElementById("sheetX").addEventListener("click",function(){
+  document.getElementById("sheet").classList.remove("show");
+});
+document.getElementById("themeBtn").addEventListener("click",function(){
+  var r = document.documentElement;
+  var dark = matchMedia("(prefers-color-scheme: dark)").matches;
+  var cur = r.getAttribute("data-theme") || (dark?"dark":"light");
+  r.setAttribute("data-theme", cur==="dark"?"light":"dark");
+});
+render();
+</script>
+</body>
+</html>

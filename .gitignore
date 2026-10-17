@@ -1,0 +1,7 @@
+index.html
+site/
+__pycache__/
+*.pyc
+preview.html
+.claude/
+.superpowers/

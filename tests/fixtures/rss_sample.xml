@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>テストサイト</title>
+    <link>https://example.com/</link>
+    <item>
+      <title>生成AIの活用が広がる</title>
+      <link>https://example.com/a1</link>
+      <pubDate>Sat, 17 Oct 2026 17:00:00 +0900</pubDate>
+      <description><![CDATA[<p><img src="a.png">A &amp; B の話</p>]]></description>
+    </item>
+    <item>
+      <title>Soraの新機能</title>
+      <link>https://example.com/a2</link>
+      <pubDate>Sat, 17 Oct 2026 14:00:00 GMT</pubDate>
+      <description>動画を作るAIが進化しました。</description>
+    </item>
+    <item>
+      <title>日付のない記事</title>
+      <link>https://example.com/a3</link>
+      <description>これは落とされます。</description>
+    </item>
+  </channel>
+</rss>

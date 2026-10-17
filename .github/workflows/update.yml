@@ -1,0 +1,58 @@
+name: 毎日の更新
+
+on:
+  schedule:
+    # 21:00 UTC = 日本時間の朝6時（GitHubが混み合うと数分〜数十分遅れることがあります）
+    - cron: "0 21 * * *"
+  workflow_dispatch:   # 手で動かすためのボタン（Actionsの画面に出ます）
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 記事を集めて index.html を作る。全サイトが読めなかった日は、ここで失敗します（＝GitHubからメールが届きます）
+      - name: 記事を集めてページを作る
+        run: python scripts/build.py
+
+      # 記事の保管ファイルに変更があれば、リポジトリに保存する
+      - name: 記事の保管ファイルを保存する
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json
+          if git diff --cached --quiet; then
+            echo "記事に変更はありません"
+          else
+            git commit -m "記事を更新"
+            git push
+          fi
+
+      - name: 公開用のフォルダを用意する
+        run: |
+          mkdir site
+          cp index.html site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
