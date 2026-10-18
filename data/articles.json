@@ -1,5 +1,68 @@
 [
   {
+    "title": "GPT-4o級モデルが自宅のPCで動いた！ ローカルAIの常識を変える「Strata」",
+    "published": "2026-10-18T22:30:00+00:00",
+    "site": "ASCII.jp",
+    "summary": "ローカルLLMの推論エンジン「Strata」を実機で検証。GPU・RAM・SSDを活用して巨大モデルを動かし、検索や画像生成へ拡張できる一方、社内運用ではRAM容量と複数人利用時の待ち時間が課題となっ…",
+    "url": "https://ascii.jp/elem/000/004/443/4443584/?rss",
+    "category": "image",
+    "service": ""
+  },
+  {
+    "title": "日本企業の「AI業務実装の壁」を打ち破る ― RPAのパイオニアが「AI×RPA×人」の統合基盤を国内展開",
+    "published": "2026-10-18T22:30:00+00:00",
+    "site": "ASCII.jp",
+    "summary": "SS&C Blue Prismは、2026年10月7日、業務自動化プラットフォーム「WorkHQ」の日本語版を提供開始した。これは、AIエージェントやRPA、人を適材適所でつなぎ、部分最適な自動化を全…",
+    "url": "https://ascii.jp/elem/000/004/443/4443113/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「言い訳文化」から脱却のNECが足立区に伝授した生成AI活用術とは データ活用“逆算”の鉄則",
+    "published": "2026-10-18T22:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "生成AIを実業務に定着させるには、明確な目的設定とデータの整備・統合が不可欠だ。NECと東京都足立区の事例を通じて、AIエージェントによるデータ分析・施策立案の実践と、統合的なAI基盤を活用した持続的…",
+    "url": "https://kn.itmedia.co.jp/kn/article/2610/19/2000002342/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "自然言語で業務手順をコード化、チーム運用と制御を備えたAIエージェント実行基盤",
+    "published": "2026-10-18T22:00:00+00:00",
+    "site": "ASCII.jp",
+    "summary": "株式会社デライトは10月13日、AIエージェント実行基盤「Agentino（エージェンティーノ）」のPublic β版の提供を開始したと発表した。",
+    "url": "https://ascii.jp/elem/000/004/443/4443388/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "米国で相次ぐ原発の「出力増強」、AIの電力需要を賄えるか？",
+    "published": "2026-10-18T20:53:21+00:00",
+    "site": "ASCII.jp",
+    "summary": "画像クレジット:AP Images",
+    "url": "https://ascii.jp/elem/000/004/443/4443585/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "無料でメモをノート・カンバン・タスク・ダッシュボード・マークダウン・グラフ表示の6つに対応できAI連携・ブラウザ拡張機能・PWA・自動バックアップもできる「Poznote」、オープンソースでセルフホスト可能",
+    "published": "2026-10-18T09:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "仕事や日常生活でメモを取っていると文章の記録・タスクの管理・スケジュールの確認など、情報の種類に応じて複数のアプリを使い分けることがあります。こうした情報を1カ所にまとめ、ノート・カンバン・タスク・ダ…",
+    "url": "https://gigazine.net/news/20261018-poznote/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "テスラが空飛ぶ車「ロードスター」を発表してからAI生成の「もしもロードスターなら」動画がSNS上で大流行中",
+    "published": "2026-10-18T02:45:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "2026年10月15日、電気自動車メーカーのテスラが新型ロードスターを発表しました。ロードスターにはコールドガススラスターを搭載したモデルがあり、これは垂直な壁を登ったり、空中で姿勢制御したり、短時間…",
+    "url": "https://gigazine.net/news/20261018-tesla-roadster-ai-meme/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
     "title": "「11回止めたのに本番DBが消えた」 AIエージェント“6つの暴走”と、人間の承認を増やしても防げない理由",
     "published": "2026-10-17T23:00:00+00:00",
     "site": "ITmedia AI＋",
@@ -320,24 +383,6 @@
     "site": "Publickey",
     "summary": "Cloudflareは、同社のエッジロケーションでコンテナ型仮想マシンを実行可能にする「Cloudflare Containers」をAIエージェント向けに刷新したことを発表しました。 これまでよりも…",
     "url": "https://www.publickey1.jp/blog/26/cloudflare_containersai6.html",
-    "category": "uncategorized",
-    "service": ""
-  },
-  {
-    "title": "世界中のソフトウェア開発者の実態を調べた「State of Devs 2026」公開。何歳？ 年収は？ モニタは何枚？ AIにどのくらいコードを書かせている？ 趣味は？ など集計結果",
-    "published": "2026-10-04T15:59:31+00:00",
-    "site": "Publickey",
-    "summary": "IT関連の各種調査を行っているプロジェクトDevographicsは、世界中のソフトウェア開発者の実態などをアンケートで調査した「State of Devs 2026」の結果を公開しました。 ここでは…",
-    "url": "https://www.publickey1.jp/blog/26/state_of_devs_2026_ai.html",
-    "category": "uncategorized",
-    "service": ""
-  },
-  {
-    "title": "Supabase、1サーバあたり数百万ものSQLiteをホストする「Turso」買収を発表。AIエージェントで加速するDB需要に対応",
-    "published": "2026-10-04T15:56:27+00:00",
-    "site": "Publickey",
-    "summary": "PostgreSQLをベースにしたデータベースサービス「Supabase」などを提供しているSupabaseは、SQLiteをベースとしたデータベースサービスを提供する「Turso」を買収したことを発…",
-    "url": "https://www.publickey1.jp/blog/26/supabase1sqlitetursoaidb.html",
     "category": "uncategorized",
     "service": ""
   }
