@@ -307,15 +307,20 @@ function render(){
   var html = '<h2>'+CATS[c].title+'</h2><p class="h-sub">'+CATS[c].sub+'</p>';
 
   if(c !== "uncategorized"){
-    var svcs = DATA.services.filter(function(s){return s.category===c && (f==="all"||s.price===f)});
-    html += '<h2 class="sec" style="margin-top:18px">サービスのしょうかい</h2><div class="services">';
-    if(!svcs.length) html += '<div class="empty" style="grid-column:1/-1">この色のサービスは、いまありません。</div>';
-    svcs.forEach(function(s){
-      var cnt = inWindow.filter(function(a){return a.service===s.name}).length;
-      html += '<div class="svc"><div class="svc-top"><div class="ico" aria-hidden="true">'+esc(s.icon)+'</div><div><h3>'+esc(s.name)+'</h3><span class="badge '+esc(s.price)+'">'+(PRICE[s.price]||"")+'</span></div></div>'
-        + '<p>'+termify(esc(s.desc))+'</p><div class="svc-bottom"><span>新着記事</span><span class="count">'+cnt+'件</span></div></div>';
+    /* 直近14日に記事があったサービスだけを出す（記事がなければ、欄ごと出さない） */
+    var svcs = DATA.services.filter(function(s){
+      return s.category===c && (f==="all"||s.price===f)
+        && inWindow.some(function(a){return a.service===s.name});
     });
-    html += '</div>';
+    if(svcs.length){
+      html += '<h2 class="sec" style="margin-top:18px">サービスのしょうかい</h2><div class="services">';
+      svcs.forEach(function(s){
+        var cnt = inWindow.filter(function(a){return a.service===s.name}).length;
+        html += '<div class="svc"><div class="svc-top"><div class="ico" aria-hidden="true">'+esc(s.icon)+'</div><div><h3>'+esc(s.name)+'</h3><span class="badge '+esc(s.price)+'">'+(PRICE[s.price]||"")+'</span></div></div>'
+          + '<p>'+termify(esc(s.desc))+'</p><div class="svc-bottom"><span>新着記事</span><span class="count">'+cnt+'件</span></div></div>';
+      });
+      html += '</div>';
+    }
   }
 
   var savedCat = savedAll.filter(function(a){return a.category===c});
