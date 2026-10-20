@@ -1,5 +1,239 @@
 [
   {
+    "title": "工作機械の不具合対応を生成AIが支援、DMG森精機が新サービス",
+    "published": "2026-10-20T22:45:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "DMG森精機は、ユーザー専用のポータルサイト「my DMG MORI」において、生成AI（人工知能）を活用した新機能「サービスエージェント」の提供を開始したと発表した。",
+    "url": "https://monoist.itmedia.co.jp/mn/articles/2610/21/news034.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「PC市場の成長ストップ」で苦戦のインテル 「半導体の崖」突破できるか、社長が語る変革への道筋",
+    "published": "2026-10-20T22:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "かつて“半導体の巨人”と呼ばれていたIntelは、PC市場の成長鈍化などを受け不調の中にある。AI時代で半導体需要が高まる中、“最大の経営課題”を解決して変革を起こせるか。",
+    "url": "https://www.itmedia.co.jp/business/articles/2610/21/news013.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "PFNとTenstorrentがタッグ、生成AI特化プロセッサ開発へ 超高メモリ帯域幅、光電融合技術を実装",
+    "published": "2026-10-20T22:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "Preferred Networks（以下、PFN）と米Tenstorrentが、AIの学習・推論を高性能・高効率に実行可能な生成AI向けプロセッサを含むシステム開発を共同で始めた。CPUの開発は米T…",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2610/21/2000002438/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「6億台のコネクテッドカー」動かす光技術 IOWNは欧州のデータセンター危機を救うか？",
+    "published": "2026-10-20T22:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "生成AIの需要爆発で欧州データセンターの空き容量が逼迫する中、NTTが提唱する次世代光技術「IOWN」が脚光を浴びている。電力危機を打破する切り札として期待が高まる光通信革命の最前線を、オランダ現地取…",
+    "url": "https://www.itmedia.co.jp/business/articles/2610/21/news044.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "AIが着こなしを自動再現。商品の寸法からシルエットの違いまでささげ業務を効率化",
+    "published": "2026-10-20T22:00:00+00:00",
+    "site": "ASCII.jp",
+    "summary": "グラムス株式会社は10月15日、ECサイト出品に必要な「ささげ業務」（撮影・採寸・原稿作成）を効率化するツール「SASAGE.APP」において、商品の実寸値を反映したモデル着用画像をつくる新機能「Vi…",
+    "url": "https://ascii.jp/elem/000/004/443/4443867/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「ニューラル・ネットは読み解ける」主張、元オープンAI研究者に真意を聞く",
+    "published": "2026-10-20T21:46:51+00:00",
+    "site": "ASCII.jp",
+    "summary": "AIの解釈可能性研究を切り開いてきたグッドファイアの研究者ニック・カマラタのブログ投稿は、AIは理解できるという「良い知らせ」として熱狂的に受け止められた。だが本人は「何もかもが良い知らせというわけで…",
+    "url": "https://ascii.jp/elem/000/004/444/4444339/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "AIブームに沸くサムスンの巨大半導体拠点、ピョンテクの建設現場を歩く",
+    "published": "2026-10-20T21:37:25+00:00",
+    "site": "ASCII.jp",
+    "summary": "韓国・ピョンテクでは、サムスンが水田の隣に巨大な半導体製造拠点を建設している。AIブームでメモリーチップの需要が急増する中、数千人の作業員が安全第一を掲げながら新たなファブの建設を進めている。",
+    "url": "https://ascii.jp/elem/000/004/444/4444340/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Rapidusで製造できるか、推論特化2nm世代半導体で医用画像処理システムを開発",
+    "published": "2026-10-20T21:30:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "LSTCと北海道大学、富士フイルム、GEヘルスケア・ジャパン、imecが、推論に特化した2nm世代半導体を活用する医用画像処理システムの開発プロジェクトについて説明。現行GPUと比較して画像処理速度5…",
+    "url": "https://monoist.itmedia.co.jp/mn/articles/2610/21/news045.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "会議の記録を残さない人が50.2％ AI議事録が便利でも企業に浸透しない理由",
+    "published": "2026-10-20T21:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "会議の内容を記録していない人は50.2％に上る一方、議事録作成ツールの利用者では73.2％が負担軽減を実感している。なぜツールの活用は進まないのか。調査結果から、議事録作成の実態とAI活用の可能性、導…",
+    "url": "https://kn.itmedia.co.jp/kn/article/2610/21/2000002415/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "GMO、生成AIの「答えるだけ問題」を解消へ 社内ナレッジを業務フローにつなぐ",
+    "published": "2026-10-20T21:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "生成AIに社内規定やマニュアルを参照させても、その後の申請やデータ登録は人手に頼る場合がある。GMOプライム・ストラテジーとGMO AIコネクトは、RAGと業務自動化基盤を連携し、社内ルールに沿った判…",
+    "url": "https://kn.itmedia.co.jp/kn/article/2610/21/2000002373/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "AIコーディングのAPIキーが狙われている OpenCodeのキー流出とインフォスティーラー「Aoki」から学ぶ対策",
+    "published": "2026-10-20T20:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "AIコーディングツールの認証情報を盗むマルウェアと、保存されたAPIキーが流出した可能性のあるサービスの侵害が、同じ週に公表された。盗まれたキーで何が起きるのか、手元のキーをどう守るかを整理する。",
+    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/21/news011.html",
+    "category": "chat",
+    "service": ""
+  },
+  {
+    "title": "「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など",
+    "published": "2026-10-20T15:10:05+00:00",
+    "site": "Publickey",
+    "summary": "Cloudflareは、AIを活用した業務のためのプラットフォームとなる「Cloudflare OS」のマネージドサービスを発表しました。現在ウェイティングリストへの登録を募集しています。 AIを活用…",
+    "url": "https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "同じ問題を解決してもAIによってコードの増加量に大きな差、AIモデルを比較するベンチマーク「Parsimony」が登場",
+    "published": "2026-10-20T14:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "AIがプログラムを修正する際に追加したコードと削除したコードの差を測定するオープンソースのベンチマーク「Parsimony」が公開されました。従来のベンチマークで重視されてきた問題の解決率やコストに加…",
+    "url": "https://gigazine.net/news/20261020-parsimony/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "キャラクターのイラスト1枚からAIエージェントと分担してVRMアバターを作るためのキット「きゃらくる(Charakuru)」",
+    "published": "2026-10-20T11:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "キャラクターのイラスト1枚を基に、AIエージェントと分担して3Dアバターを制作するキット「きゃらくる(Charakuru)」がGitHubで公開されています。ユーザーが見た目や動きを確認しながら、VR…",
+    "url": "https://gigazine.net/news/20261020-charakuru/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「どの国のモデルか」は本質ではない 「中国製LLMは危険な指示を実行」発言で話題の専門家に補足してもらった",
+    "published": "2026-10-20T08:43:38+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "中国製LLMは本当に危険なのか。一連の情報漏えい騒動とAIの関係について、問題の本質はどこにあるのか。取材での回答が話題になっている専門家に聞いた。",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2610/20/2000002430/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "デジタル庁、政府職員18万人にAIエージェント環境を展開──「源内」で提供開始、独自の安全基準も",
+    "published": "2026-10-20T08:14:44+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "デジタル庁は10月20日、政府職員向けの生成AI利用環境「源内」で、職員が自らAIエージェントを作って動かせる環境を順次導入すると発表した。安全に使うためのルール「源内基準」も併せて公表した。",
+    "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002428/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Cloudflareが文章や画像から必要な情報を高速・低コストで抽出するAI「Clairic」を発表、計算や予測にも対応",
+    "published": "2026-10-20T06:50:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "Cloudflareは2026年10月19日、文章や画像から必要な情報を抽出したり数値を計算・予測したりできるAIモデル「Clairic」を発表しました。Clairicは「System One」と呼ば…",
+    "url": "https://gigazine.net/news/20261020-cloudflare-clairic/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "マインクラフトをGemini 4 ArgonのAIエージェント4体が人間の助けを一切借りずに27時間14分でクリア、一体何円かかったのか？",
+    "published": "2026-10-20T06:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "GoogleのAIモデルである「Gemini 4 Argon」で動作する4つのAIエージェントが、人間の介入なしで初めてマインクラフトをクリアすることに成功しました。",
+    "url": "https://gigazine.net/news/20261020-gemini-4-argon-agents-beat-minecraft-without-human-help/",
+    "category": "chat",
+    "service": "Gemini"
+  },
+  {
+    "title": "AIにゲームをコピーされて本家より先に発売される危険を恐れて無料体験版の公開が中止される",
+    "published": "2026-10-20T05:42:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "AIコーディングツールによってゲームの作成プロセスが非常に高速になっていることから、新作ゲームをリリースした直後にAIによるコピーゲームが登場したり、ゲーム発売前のプレビューや体験版の段階でAIがよく…",
+    "url": "https://gigazine.net/news/20261020-ai-game-clones/",
+    "category": "chat",
+    "service": ""
+  },
+  {
+    "title": "中国語を使うハッカーがAIエージェントで日本企業などにハッキングして100件近い攻撃に成功していたことが判明",
+    "published": "2026-10-20T05:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "2026年9月以降、日本企業がハッカーにより不正アクセスされる被害が相次いでおり、AIを悪用したハッキングの高速化・高度化が懸念されています。サイバーセキュリティ企業のNorForgeで主席脅威研究員…",
+    "url": "https://gigazine.net/news/20261020-chinese-hacker-ai-agents-break-websites/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "MiniMaxが新AIモデル「MiniMax M3.1 Flash」を発表、AIエージェントの性能を強化しつつ利用コストを70％削減",
+    "published": "2026-10-20T04:50:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "中国のAI企業であるMiniMaxが2026年10月19日、新たなAIモデル「MiniMax M3.1 Flash」を発表しました。AIエージェントによる複雑な作業やプログラミング、PC操作、サイバー…",
+    "url": "https://gigazine.net/news/20261020-minimax-m3-1-flash/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "アメリカ国土安全保障省が連邦文民機関に対しDeepSeekの技術を排除するよう命令",
+    "published": "2026-10-20T04:50:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "アメリカの国土安全保障省(DHS)が、連邦政府の文民機関に対して、中国のAI企業・DeepSeekの製品やサービスを調達対象から除外するよう命令を出したことがわかりました。",
+    "url": "https://gigazine.net/news/20261020-dhs-orders-to-remove-deepseek-tech/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "開発者たちはAIを使ってスマートテレビから広告とトラッキングを削除しようとしている",
+    "published": "2026-10-20T04:40:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "昨今のスマートテレビには広告が表示されることがあります。このような広告を嫌う人々が、余計な機能を取り除く非公式のツールを開発しています。",
+    "url": "https://gigazine.net/news/20261020-smart-tv-no-ads-tool/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "ネットバンキングにログインしたまま別作業は危険？ 「ChatGPT Atlas」などのAIブラウザ7種でデータ窃取を検証",
+    "published": "2026-10-20T03:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "米ワシントン大学に所属する研究者らが発表した論文「Agentic Browsers and the Same-Origin Policy」は、AIエージェントがユーザーに代わってWeb操作を行うAIブ…",
+    "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002377/",
+    "category": "chat",
+    "service": "ChatGPT"
+  },
+  {
+    "title": "ChatGPT広告は誰に何を表示しているのか？ 米大学が91のおとりアカウントで実態調査",
+    "published": "2026-10-20T03:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "米ペンシルベニア大学や米ハバフォード大学に所属する研究者らが発表した論文「The Beginning of ChatGPT Ads」は、ChatGPTの広告がどのようなユーザーに、どのような基準で配信…",
+    "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002375/",
+    "category": "chat",
+    "service": "ChatGPT"
+  },
+  {
+    "title": "Grok BotがiPhoneのアクションボタンに対応 音声会話などを起動可能",
+    "published": "2026-10-20T00:59:23+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "常時稼働エージェントツール「Grok Bot」がiPhoneのアクションボタンに対応。「15 Pro」以降のiPhoneでGrok Botのバージョンを「1.16」にアップデートすると割り当てられるよ…",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2610/20/2000002411/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
     "title": "米国土安全保障省、中国DeepSeek製品を連邦民間機関から排除する命令",
     "published": "2026-10-19T22:07:09+00:00",
     "site": "ITmedia AI＋",
@@ -599,24 +833,6 @@
     "site": "Publickey",
     "summary": "さくらインターネットは、GPUサーバ上で基盤モデルを展開しマネージドサービスとして提供する「さくらのAI Engine」を、企業がGPUを専有して使える「さくらのAI Engine プライベートエディ…",
     "url": "https://www.publickey1.jp/blog/26/gpuai_engine.html",
-    "category": "uncategorized",
-    "service": ""
-  },
-  {
-    "title": "マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装",
-    "published": "2026-10-06T15:47:53+00:00",
-    "site": "Publickey",
-    "summary": "マイクロソフトは9月30日付けでリリースされたVisual Studio Code 1.140（以下、VS Code）で、複数のAIベンダから提供されているAIモデルをオーケストレーションすることでよ…",
-    "url": "https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html",
-    "category": "uncategorized",
-    "service": ""
-  },
-  {
-    "title": "FDE（フォワードデプロイドエンジニアリング）によって開発されたAIエージェントの7割は使われず、FDEの名前で単なるコンサルティングが販売されるようになる危険が高まるとガートナーが予測",
-    "published": "2026-10-06T15:43:31+00:00",
-    "site": "Publickey",
-    "summary": "米調査会社のガートナーは、ベンダーのFDE（フォワードデプロイドエンジニアあるいはフォワードデプロイドエンジニアリング）によって開発されたAIエージェントの70％が2028年までに企業に使われずに放棄…",
-    "url": "https://www.publickey1.jp/blog/26/fdeai7fde.html",
     "category": "uncategorized",
     "service": ""
   }
