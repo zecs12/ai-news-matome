@@ -1,5 +1,248 @@
 [
   {
+    "title": "米国土安全保障省、中国DeepSeek製品を連邦民間機関から排除する命令",
+    "published": "2026-10-19T22:07:09+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "米国土安全保障省は、中国DeepSeekの製品および関連サービスを連邦民間機関の調達とITシステムから排除する命令を官報で公示した。自社製だけでなく、同社の実装を用いた第三者製品も排除対象とする。連邦…",
+    "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002405/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「データセンター×発電設備」一体開発がトレンド？ 日立・東京ガスが九州で計画、JERAは千葉で 狙いは",
+    "published": "2026-10-19T22:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "日立製作所や東京ガスなど4社が、データセンターと電源設備を一体開発するため協業した。関東と九州でデータセンター開発計画を策定する。発電大手JERAも、発電所一体型データセンターを建設中だ。一体型が増え…",
+    "url": "https://www.itmedia.co.jp/business/articles/2610/20/news051.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「税金で動かす以上……」 政府18万人が使うAI「源内」の「コストに関する工夫」とは",
+    "published": "2026-10-19T22:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "デジタル庁は、全府省庁の職員約18万人に生成AI「源内」を提供する。情報の機密性、税金で運用するAIのコスト感など解決しなければならない課題も多い。AI活用にどう取り組むのか。",
+    "url": "https://www.itmedia.co.jp/business/articles/2610/20/news012.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "AI活用で「年3万5000時間削減」の江戸川区 「配って終わり」にさせないコツは？ 5年で培った実践知を聞く",
+    "published": "2026-10-19T22:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "江戸川区がAI活用によって年3万5000時間の削減に成功した。約5年でさまざまな活用事例を蓄積。「ツールを配って終わり」にさせない導入のポイントとは。",
+    "url": "https://www.itmedia.co.jp/business/articles/2610/20/news011.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "“テスラ超え”狙う――チューリング「完全自動運転」までの道 「GPUより速いチップ」使った開発のウラ側",
+    "published": "2026-10-19T22:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "「テスラ超え」を掲げる自動運転スタートアップのTuringは、AI技術の開発を加速させている。しかし「GPUを増やすだけでは開発スピードが上がらなかった」という。この課題をどう乗り越えたのか。",
+    "url": "https://www.itmedia.co.jp/business/articles/2610/20/news017.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "3D都市モデルを見て・変換して・重ねる！データ活用やAI連携を学ぶ国交省の無料ハンズオン開催",
+    "published": "2026-10-19T22:00:00+00:00",
+    "site": "ASCII.jp",
+    "summary": "国土交通省が主催するイベント「PLATEAU Hands-on 26」が、11月6日17時より開催される。「はじめてのPLATEAU、3D都市モデルを見て・変換して・重ねてみよう」というテーマで、参加…",
+    "url": "https://ascii.jp/elem/000/004/443/4443468/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「日本を愛している。見過ごせない」――“100億円配布”のセキュリティ支援策、トレンドマイクロCEOが見せた危機感",
+    "published": "2026-10-19T21:40:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "相次ぐセキュリティ事案を受けて、トレンドマイクロが100億規模の「緊急支援」を打ち出した。国内法人のセキュリティ対策ツール導入などを支援する。会見でCEOが語ったのは、この状況に対する危機感だった。",
+    "url": "https://www.itmedia.co.jp/business/articles/2610/20/news041.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "「保守的な日本の現場に合う」導入2500時間の壁を壊す倉庫AI、IFS Softeonの真価",
+    "published": "2026-10-19T21:30:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "IFSとIFS Softeonは、倉庫向けAIの新機能「Fulfillment Flow」を発表した。6つの現場特化型AIエージェントが連携し、「部分最適のしわ寄せ」を解消する。同社 最高収益責任者（…",
+    "url": "https://monoist.itmedia.co.jp/mn/articles/2610/20/news044.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "やることがないAIは何をする？ 無人島に30時間置き去りにした結果",
+    "published": "2026-10-19T21:11:11+00:00",
+    "site": "ASCII.jp",
+    "summary": "目標を与えずにバーチャルの無人島に置かれたAIエージェントは、ジャグリングの記録に挑み、条件が甘いと自ら記録を取り消してやり直した。研究者らは、こうした「遊び」が後の課題解決に役立つことを示した。ただ…",
+    "url": "https://ascii.jp/elem/000/004/443/4443906/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "高性能AIによるゼロデイ攻撃にどう備える？ サイバー防御の鍵を握る「ハーネス」とは",
+    "published": "2026-10-19T21:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "高性能AIの登場により、未知の脆弱性の発見から攻撃の実行までを自律的に進めるサイバー攻撃が現実となった。攻撃と防御の鍵を握る「ハーネス」の役割と、被害を最小限に抑えるための4つの対策を解説する。",
+    "url": "https://kn.itmedia.co.jp/kn/article/2610/20/2000002396/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "AIの思考を潜在空間で実行して高性能化＆高速化＆低コスト化を実現する「Hybrid Reasoning Agents」",
+    "published": "2026-10-19T13:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "スタンフォード大学、Together AI、イリノイ大学アーバナ・シャンペーン校、Metaの研究チームが「Hybrid Reasoning Agents」というAI実行手法を発表しました。AIモデルの…",
+    "url": "https://gigazine.net/news/20261019-hybrid-reasoning-agents/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "AIが数学の難問を解く現状について数学者が「建設的に関わっていく方法が見いだせない」と語る",
+    "published": "2026-10-19T12:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "存命する数学者の中で世界最高峰のひとりと評されるテレンス・タオ氏は、現在、ほとんど数学に取り組めていないそうです。カリフォルニア大学ロサンゼルス校で開かれた数学のワークショップに出席したタオ氏は、AI…",
+    "url": "https://gigazine.net/news/20261019-front-lines-debate-ai-future-math/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "AIのベンチマークテストは人間の仕事の1割しかカバーできていない",
+    "published": "2026-10-19T11:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "AIの性能を測定するベンチマークテストの中には「人間の仕事をどれだけの精度でこなせるか」を測定するものが多く含まれています。ところが、こうしたベンチマークは「一部のタスク」しかカバーしておらず、AIが…",
+    "url": "https://gigazine.net/news/20261019-ai-benchmark-mapping/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Claudeが25年以上謎だった暗号規格の数値の起源を解明、NSAが説明なく提供した数値は「1990年代の乱数」だった",
+    "published": "2026-10-19T10:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "AI開発企業のAnthropicは2026年10月16日、AIモデル「Claude」が広く使われている楕円曲線暗号規格「ECDSA」に関する長年の謎を解明したと発表しました。",
+    "url": "https://gigazine.net/news/20261019-ecdsa-seed-origin/",
+    "category": "chat",
+    "service": "Claude"
+  },
+  {
+    "title": "QommonsAI活用研修を兵庫県豊岡市（ひょうごけん とよおかし）で実施 - 条例案作成の現場で考える、生成AIの使い分け",
+    "published": "2026-10-19T09:10:00+00:00",
+    "site": "ASCII.jp",
+    "summary": "QommonsAI活用研修を兵庫県豊岡市（ひょうごけん とよおかし）で実施 - 条例案作成の現場で考える、生成AIの使い分け",
+    "url": "https://ascii.jp/elem/000/004/443/4443896/?rss",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Anthropicが株式の一部を公共利益のための子会社「Anthropic Public Benefit Fund」に拠出、拠出額はAnthropicの評価額に応じて増加予定",
+    "published": "2026-10-19T07:10:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "AI企業のAnthropicは、公共の利益に完全に献身する新しい完全子会社である「Anthropic Public Benefit Fund」に株式の一部を拠出することを2026年10月19日に発表し…",
+    "url": "https://gigazine.net/news/20261019-public-benefit-fund/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Microsoftがイギリス最大級のAIデータセンター計画から撤退",
+    "published": "2026-10-19T06:50:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "イギリス・エセックス州ラフトンで開発が進められているAIデータセンターに進出予定だったMicrosoftが、GPUのリース契約を解除して計画から撤退したことがわかりました。当該データセンターは、電力供…",
+    "url": "https://gigazine.net/news/20261019-microsoft-essex-ai-data-center/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "脱獄したPlayStation 5のGPUでllama.cppを実行できる「PS5LM Plus」",
+    "published": "2026-10-19T06:40:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "PlayStation 5(PS5)本体でAIモデルを動かし、PCやスマートフォンからチャットで利用できるオープンソースアプリ「PS5LM Plus」がGitHubで公開されています。",
+    "url": "https://gigazine.net/news/20261019-ps5lm-plus-gpu-ai/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Anthropic社内ではAIが人間の6倍も稼働していることが判明、従業員の仕事は「AIの監督」へと変化",
+    "published": "2026-10-19T06:00:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "AI「Claude」を開発するAnthropicが社内のAI利用状況や雇用の変化を調査したところ、AIの稼働時間が人間の労働時間の6倍に達していることが明らかになりました。AIによって生産性が向上する…",
+    "url": "https://gigazine.net/news/20261019-employment-at-anthropic/",
+    "category": "chat",
+    "service": "Claude"
+  },
+  {
+    "title": "AIプログラミングツール「OpenCode」でAPIキー流出の可能性、OpenAIやClaudeの利用残高が不正利用でゼロになったとの報告も",
+    "published": "2026-10-19T05:03:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "オープンソースのAIプログラミングツール「OpenCode」の運営元が2026年10月17日に不正アクセスを受けたことを明らかにしました。OpenAIやAnthropicなどのAIサービスを利用するた…",
+    "url": "https://gigazine.net/news/20261019-opencode-leak/",
+    "category": "chat",
+    "service": "Claude"
+  },
+  {
+    "title": "AIエージェントの業務管理、答えは「プロジェクト管理」にある？ NTTテクノクロスの「AI-PMO」構想を基に考察",
+    "published": "2026-10-19T04:25:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "人間とAIエージェントが協働してどのように成果を上げ、目標を達成するか。そのマネジメントはプロジェクト管理の手法で担えないか――。NTTテクノクロスの取り組みから発想したことについて考察する。",
+    "url": "https://www.itmedia.co.jp/enterprise/articles/2610/19/news068.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "DeepSeekの検索APIが登場、1000回のリクエスト成功ごとに0.75ドルで競合より安価",
+    "published": "2026-10-19T03:09:00+00:00",
+    "site": "GIGAZINE",
+    "summary": "中国に拠点を置くAI企業のDeepSeekが検索APIとフェッチAPIを2026年10月17日にリリースしました。ウェブ上の情報を検索してAI処理に用いるワークフローで活用できます。",
+    "url": "https://gigazine.net/news/20261019-deepseek-search-fetch-api/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "AI活用で約2900時間削減した世田谷区、しかし「確認と修正の負担」増加 新たな課題どう対応？",
+    "published": "2026-10-19T03:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "世田谷区が生成AIを活用し、業務時間の削減に成功した。しかし、AIによる生成物に対して「確認と修正の負担が増えている」という。この課題にどう向き合うのか。",
+    "url": "https://www.itmedia.co.jp/business/articles/2610/19/news064.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Anthropic、株式の5％を公益目的の新組織に拠出 企業価値の上昇に応じて割合を拡大",
+    "published": "2026-10-19T00:38:54+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "Anthropicは、自社株の一部を新組織「Anthropic Public Benefit Fund」に拠出すると発表した。まず株式の5％を拠出し、企業価値の上昇に応じて追加する。完全子会社のLLC…",
+    "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002359/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "中国DeepSeek、V4.1-Flash新バージョンを公開 一部Astra超えをうたうモデルがオープンに",
+    "published": "2026-10-19T00:35:40+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "中国DeepSeekが「DeepSeek-V4.1-Flash-1017」を公開。コーディングエージェント性能評価の一部でGPT-6 Astra超えをうたい、実行時間と出力量も削減したという。重みはM…",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2610/19/2000002357/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Anthropic、社内でAIエージェントの稼働時間が人間の6倍に 技術系初級職の採用比率は27％→9％に激減",
+    "published": "2026-10-18T23:02:13+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "Anthropicは、社内雇用の変化と一般市民とのAI予測格差に関する調査を公開した。AnthropicではAI稼働時間が人間を上回り、技術系初級職の採用比率が急減した。自身の業務の自動化予測は、An…",
+    "url": "https://www.itmedia.co.jp/news/article/2610/19/2000002353/",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
+    "title": "Newオンプレミス、RAG、SREはもう“幻滅期” 2026年、「過度な期待」のピークにある5項目とは？",
+    "published": "2026-10-18T23:00:00+00:00",
+    "site": "ITmedia AI＋",
+    "summary": "ガートナーが、2026年の日本におけるクラウドとAIのハイプサイクルを発表。Newオンプレミス、RAG、SREが“幻滅期”に入る一方で、“過度な期待”のピークに立つ5項目が示された。",
+    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/19/news029.html",
+    "category": "uncategorized",
+    "service": ""
+  },
+  {
     "title": "GPT-4o級モデルが自宅のPCで動いた！ ローカルAIの常識を変える「Strata」",
     "published": "2026-10-18T22:30:00+00:00",
     "site": "ASCII.jp",
@@ -374,15 +617,6 @@
     "site": "Publickey",
     "summary": "米調査会社のガートナーは、ベンダーのFDE（フォワードデプロイドエンジニアあるいはフォワードデプロイドエンジニアリング）によって開発されたAIエージェントの70％が2028年までに企業に使われずに放棄…",
     "url": "https://www.publickey1.jp/blog/26/fdeai7fde.html",
-    "category": "uncategorized",
-    "service": ""
-  },
-  {
-    "title": "Cloudflare ContainersがAIエージェント向けに刷新。起動が6倍速、ファイルシステムのスナップショット機能など",
-    "published": "2026-10-05T15:29:53+00:00",
-    "site": "Publickey",
-    "summary": "Cloudflareは、同社のエッジロケーションでコンテナ型仮想マシンを実行可能にする「Cloudflare Containers」をAIエージェント向けに刷新したことを発表しました。 これまでよりも…",
-    "url": "https://www.publickey1.jp/blog/26/cloudflare_containersai6.html",
     "category": "uncategorized",
     "service": ""
   }
